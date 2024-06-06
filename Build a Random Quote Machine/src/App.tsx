@@ -23,7 +23,7 @@ function App() {
         <h1 id="text">"{quote.quote}"</h1>
         <h2 id="author">- {quote.author}</h2>
         <button id="new-quote" onClick={newQuote}>New Quote</button>
-        <a id="tweet-quote" target="_blank" href="twitter.com/intent/tweet">Tweet Quote</a>
+        <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${quote.quote}`}>Tweet Quote</a>
       </div>
     </>
   )
